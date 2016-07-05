@@ -1,0 +1,55 @@
+.testimonials
+{
+    color:#828282;
+    padding:40px 20px 40px 20px;
+    box-sizing: border-box;
+    h5
+    {
+        font-size: 1.5rem;
+        text-align:center;
+        margin:0 0 15px 0;
+    }
+    p
+    {
+        text-align: center;
+        font-size: 1.2rem;
+        max-width: 992px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .underline
+    {
+        @include underline();
+    }
+    .comments
+    {
+        max-width: 992px;
+        margin-left:auto;
+        margin-right:auto;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        @media screen and (min-width:768px)
+        {
+            flex-direction: row;
+        }
+        .comment
+        {
+            margin:0px 20px 0px 20px;
+            p
+            {
+                text-align: left;
+                color:#555;
+                font-style: italic;
+            }
+            margin-top:50px;
+            .ben
+            {
+                display:block;
+                margin-left:auto;
+                margin-right:auto;
+            }
+        }
+    }
+}

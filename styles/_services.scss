@@ -1,0 +1,132 @@
+.services
+{
+    color:#828282;
+    padding:40px 20px 60px 20px;
+    background-color: #f6f6f6;
+    box-sizing: border-box;
+    h5
+    {
+        font-size: 1.5rem;
+        text-align: center;
+        margin:0 0 15px 0;
+    }
+    p
+    {
+        text-align: center;
+        font-size: 1.2rem;
+        max-width:992px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .underline
+    {
+        @include underline();
+    }
+    .coaching
+    {
+        background-color: #fff;
+        padding:10px;
+        position: relative;
+        margin-top:75px;
+        padding-bottom:50px;
+        flex:1;
+        margin-bottom:50px;
+        @media screen and(min-width:768px)
+        {
+            width:45%;
+        margin-left:2.5%;
+        margin-right:2.5%;
+        }
+        
+        h6
+        {
+            text-align: center;
+            font-size: 1.4rem;
+            color: #9068be;
+            margin-top:75px;
+        }
+        .circle
+        {
+            background-color: #9068be;
+            border-radius: 50%;
+            width:100px;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            height:100px;
+            position: absolute;
+            top:-50px;
+            left:50%;
+            transform: translate(-50%);
+            img
+            {
+                width:70%;
+            }
+        }
+        p
+        {
+            text-align: center;
+        }
+        .GetIt
+        {
+            @include GetIt();
+            position: absolute;
+            top:100%;
+            transform: translate(-50%,-50%);
+            left:50%;
+        }
+        .GetIt:hover
+        {
+            background-color: #86442f;
+            border: 1px solid #fff;
+        }       
+    }
+     .development
+        {
+            @extend .coaching;
+            h6
+            {
+                text-align: center;
+                font-size: 1.4rem;
+                color: #02c6d8;
+                margin-top:75px;
+            }
+            .circle
+            {
+                @extend .circle;
+                background-color: #02c6d8;
+            }
+            .LearnMore
+            {
+                background-color: #326c73;
+                border:0;
+                color:white;
+                font-family: 'Courgette', cursive;
+                position: absolute;
+                top:100%;
+                transform: translate(-50%,-50%);
+                border: 1px solid #326c73;
+                left:50%;
+                cursor:pointer;
+                padding:10px 20px 10px 20px;
+                transition: .25s;
+            }
+            .LearnMore:hover
+            {
+                background-color: #1c3a3e;
+                border: 1px solid #fff;
+            }
+        }
+    .media_container
+    {
+        display:flex;
+        flex-direction: column;
+        max-width:992px;
+        margin-right:auto;
+        margin-left:auto;
+        @media screen and (min-width:768px)
+        {
+            flex-direction: row;
+        }
+    }
+}
